@@ -1,5 +1,4 @@
 # hpc_lecture
-# YUAN Yucheng
 # 21M12289
 
 |          | Topic                                | Sample code               |
