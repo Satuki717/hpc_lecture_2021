@@ -1,5 +1,6 @@
 //Based on the code, compiling with SIMD make the speed slow. So I only choose to use openmp+mpi.
 //running log is in the log.txt
+//mpicxx openmp+mpi+simd.cpp
 
 #include <mpi.h>
 #include <cstdio>
