@@ -1,0 +1,32 @@
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpicxx openmp+mpi+simd.cpp
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpirun -np 1 ./a.out
+N    : 256
+comp : 0.175606 s
+comm : 0.000446 s
+total: 0.176052 s (0.190594 GFlops)
+error: 0.000016
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpirun -np 2 ./a.out
+N    : 256
+comp : 0.076455 s
+comm : 0.000579 s
+total: 0.077034 s (0.435579 GFlops)
+error: 0.000016
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpirun -np 3 ./a.out
+N    : 256
+comp : 0.051110 s
+comm : 0.001749 s
+total: 0.052859 s (0.634796 GFlops)
+error: 2.917817
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpirun -np 4 ./a.out
+N    : 256
+comp : 0.038713 s
+comm : 0.001296 s
+total: 0.040010 s (0.838661 GFlops)
+error: 0.000016
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpicxx openmp+mpi+simd.cpp -march=native -o3
+21M12289@login0:~/hpc_lecture_2021/16_final_report> mpirun -np 4 ./a.out
+N    : 256
+comp : 0.045144 s
+comm : 0.001460 s
+total: 0.046605 s (0.719983 GFlops)
+error: 0.000016
