@@ -1,3 +1,4 @@
+//nvcc cuda+mpi.cu -lmpi
 #include <mpi.h>
 #include <cstdio>
 #include <cstdlib>
