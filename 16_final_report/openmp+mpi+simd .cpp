@@ -1,3 +1,5 @@
+//mpicxx openmp+mpi.cpp -march=native -o3
+//mpirun -np 1 ./a.out 
 #include <mpi.h>
 #include <cstdio>
 #include <cstdlib>
